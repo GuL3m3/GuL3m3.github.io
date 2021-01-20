@@ -1,0 +1,288 @@
+.carrinho .titulo {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.carrinho .menu {
+  display: flex;
+}
+
+.carrinho .produto {
+  margin-left: 50px;
+}
+
+.carrinho .produto .cima {
+  display: flex;
+}
+
+.carrinho .produto .cima .sub-titulo-livro {
+  font-family: "Lato";
+  font-weight: 510;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 230px;
+}
+
+.carrinho .produto .cima .sub-titulo {
+  font-family: "Lato";
+  font-weight: 510;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.carrinho .produto .livro {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+.carrinho .produto .livro .imgBox {
+  height: 100px;
+  width: 65px;
+  margin-left: 55px;
+  margin-right: 20px;
+}
+
+.carrinho .produto .livro .descricao {
+  margin-right: 10px;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.carrinho .produto .livro .descricao .nome {
+  font-family: "Lato";
+  font-size: 120%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.carrinho .produto .livro .descricao .estoque {
+  font-family: "Lato";
+  font-weight: 700;
+  color: rgb(163 35 26 / 1);
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.carrinho .produto .livro .descricao .capa {
+  font-family: "Lato";
+  font-weight: 500;
+  color: rgb(163 35 26 / 1);
+  margin-left: 10px;
+}
+
+.carrinho .produto .livro .quantidade {
+  margin-right: 10px;
+  width: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.carrinho .produto .livro .quantidade .inputQuantidade {
+  height: 30px;
+  width: 50px;
+  margin-top: 25px;
+  margin-left: 15px;
+  display: block;
+  font-family: "Lato";
+  text-align: justify;
+}
+
+.carrinho .produto .livro .lixeira {
+  font-size: 28px;
+  /* margin-top: 25px; */
+
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.carrinho .produto .livro .lixeira a {
+  color: rgb(163 35 26 / 1);
+}
+
+.carrinho .produto .livro .lixeira a .icone-lixo {
+  margin-top: 25px;
+}
+
+.carrinho .produto .livro .preco {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 17px;
+  letter-spacing: -1.5px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.carrinho .resumo {
+  height: 500px;
+  width: 350px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-left: 100px;
+  background-color: #bdc3c7;
+}
+
+.carrinho .resumo .sub-titulo {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  /* margin-top: 15px; */
+  /* margin-right: auto; */
+  margin-left: 20px;
+}
+
+.carrinho .resumo .subtotal {
+  display: flex;
+  margin-top: 20px;
+}
+
+.carrinho .resumo .subtotal .conta {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.carrinho .resumo .subtotal .numero {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-left: 75px;
+}
+
+.carrinho .resumo .cep {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.carrinho .resumo .cep .label {
+  margin-bottom: 5px;
+  display: block;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.carrinho .resumo .cep .cep-caixa {
+  display: flex;
+  align-items: center;
+  border: solid 2px #000;
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo {
+  flex: 1;
+
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao {
+  all: unset;
+
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao .cep-botao-icone {
+  font-size: 21px;
+}
+
+.carrinho .resumo .total .barra {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carrinho .resumo .total .dentro-total {
+  display: flex;
+}
+
+.carrinho .resumo .total .resultado {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.carrinho .resumo .total .total-numero {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.carrinho .resumo .finalizar-compra a {
+  text-decoration: none;
+}
+
+.carrinho .resumo .finalizar-compra .botao-comprar {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
+  margin-top: 20px;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #a62520;
+
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.carrinho .resumo .img-brasao {
+  margin-top: 10px;
+  margin-left: 90px;
+  height: 150px;
+  width: 130px;
+}

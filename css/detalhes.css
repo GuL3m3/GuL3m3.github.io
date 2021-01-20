@@ -1,0 +1,210 @@
+.detalhes-do-produto {
+  display: flex;
+  width: 1200px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.detalhes-do-produto .esquerda {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detalhes-do-produto .esquerda .capa {
+  width: 270px;
+}
+
+.detalhes-do-produto .esquerda .capas-mini {
+}
+
+.detalhes-do-produto .esquerda .capas-mini .box {
+  width: 80px;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.detalhes-do-produto .esquerda .capas-mini .box .capinha {
+  width: 100%;
+  height: 100%;
+}
+
+.detalhes-do-produto .centro {
+  margin: 0 25px;
+  border-right: 1px solid rgb(229, 229, 229);
+  padding-right: 25px;
+}
+
+.detalhes-do-produto .centro .titulo {
+  font-family: "Lato";
+  font-size: 37px;
+}
+
+.detalhes-do-produto .centro .codigo {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 10px;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.detalhes-do-produto .centro .comprar-caixa {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.detalhes-do-produto .centro .comprar-caixa .preco {
+  margin-right: 25px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+}
+
+.detalhes-do-produto .centro .textos {
+  font-family: "Lato";
+  font-size: 17px;
+  margin-bottom: 5px;
+  max-width: 500px;
+}
+
+.detalhes-do-produto .centro .textos strong {
+  font-weight: 700;
+}
+
+.detalhes-do-produto .centro .subtitulo {
+  margin-bottom: 5px;
+  font-family: "Lato";
+  font-size: 27px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.detalhes-do-produto .direita {
+  margin-top: 40px;
+}
+
+.detalhes-do-produto .direita .preco {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  color: #eca527;
+}
+
+.detalhes-do-produto .direita .cep {
+  width: 100%;
+}
+
+.detalhes-do-produto .direita .cep .label {
+  margin-bottom: 5px;
+  display: block;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.detalhes-do-produto .direita .cep-caixa {
+  display: flex;
+  align-items: center;
+  border: solid 2px #000;
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-campo {
+  flex: 1;
+
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.detalhes-do-produto
+  .direita
+  .cep
+  .cep-caixa
+  .cep-campo::-webkit-input-placeholder {
+  /* Edge */
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-campo:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-campo::placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-botao {
+  all: unset;
+
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-botao:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-do-produto .direita .cep .cep-caixa .cep-botao .cep-botao-icone {
+  font-size: 21px;
+}
+
+.detalhes-do-produto .direita .comprar {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
+  margin-top: 50px;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2ecc71;
+
+  font-size: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.detalhes-do-produto .direita .comprar:hover {
+  opacity: 0.7;
+}
+
+.detalhes-do-produto .direita .comprar .comprar-icone {
+  font-size: 25px;
+  margin-right: 7px;
+  margin-top: -5px;
+}
+
+.detalhes-do-produto .direita a {
+  text-decoration: none;
+}

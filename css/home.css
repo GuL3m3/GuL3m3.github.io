@@ -1,0 +1,53 @@
+.propaganda {
+  width: 1200px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  background-color: #cccccc;
+}
+
+.produtos {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produtos .livros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produtos .livros .livro {
+  width: 250px;
+  height: 350px;
+  margin-bottom: 50px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+.produtos .livros .livro a {
+  text-decoration: none;
+}
+
+.produtos .livros .livro .livro-capa {
+  height: 280px;
+  margin: 0 auto 20px;
+}
+
+.produtos .livros .livro .livro-titulo {
+  margin-bottom: 5px;
+
+  font-family: "Roboto";
+  font-weight: 300;
+  color: black;
+}
+
+.produtos .livros .livro .livro-preco {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -1px;
+  color: #eca527;
+}

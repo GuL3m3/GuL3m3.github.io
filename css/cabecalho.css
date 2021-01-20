@@ -1,0 +1,140 @@
+.cabecalho {
+  /* POSICIONAMEMTO */
+
+  /* BOX DO ELEMENTO */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+
+  /* OUTROS */
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0 60px;
+}
+
+.cabecalho .logo {
+  height: 50px;
+}
+
+.cabecalho .busca {
+  width: 40%;
+}
+
+.cabecalho .busca-caixa {
+  display: flex;
+  align-items: center;
+
+  background-color: #fff;
+}
+
+.cabecalho .busca .busca-caixa .busca-campo {
+  flex: 1;
+
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.cabecalho .busca .busca-caixa .busca-campo::-webkit-input-placeholder {
+  /* Edge */
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.cabecalho .busca .busca-caixa .busca-campo:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.cabecalho .busca .busca-caixa .busca-campo::placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.cabecalho .busca .busca-caixa .busca-botao {
+  all: unset;
+
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.cabecalho .busca .busca-caixa .busca-botao:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho .busca .busca-caixa .busca-botao .busca-botao-icone {
+  font-size: 21px;
+}
+
+.cabecalho .direita {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho .direita .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cabecalho .direita .usuario {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.cabecalho .direita .usuario .usuario-icone {
+  margin-right: 5px;
+
+  font-size: 40px;
+}
+
+.cabecalho .direita .usuario .usuario-texto {
+  margin-top: 3px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.cabecalho .direita .usuario .usuario-texto span {
+  font-size: 11px;
+}
+
+.cabecalho .direita .carrinho {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho .direita .carrinho .carrinho-icone {
+  margin-right: 5px;
+
+  font-size: 40px;
+}
+
+.cabecalho .direita .carrinho .carrinho-texto {
+  margin-top: 3px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.cabecalho .direita .carrinho .carrinho-texto span {
+  font-size: 11px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um tributo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/detalhes.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/cadastros.css">
+</head>
+<body>
+      <div class="cabecalho"> 
+        <a href="../index.html">
+          <img src="../imagens/logo.png" class="logo"/>
+        </a>
+          <form class="busca">
+            <div class="busca-caixa">
+              <input  class="busca-campo" placeholder="O que deseja?"/>
+              <button class="busca-botao">
+                <ion-icon class="busca-botao-icone" name="search-outline"></ion-icon>
+              </button>
+            </div>
+          </form>
+          <div class="direita">
+            <div class="usuario">
+              <a class="link" href="../cadastros/login.html">
+                <ion-icon class="usuario-icone" name="person-circle-outline"></ion-icon>
+                <p class="usuario-texto">Seja um tributo <br/> <span>ou faça o login</span></p>
+              </a>
+            </div>
+            <div class="carrinho">
+              <a class="link" href="../sacola/minha-sacola.html">
+                <ion-icon class="carrinho-icone" name="bag-handle-outline"></ion-icon>
+                <p class="carrinho-texto">Minha<br/><span>sacola</span></p>
+              </a>
+            </div>
+          </div>
+      </div>
+      
+      <div class="formularios">
+        <h2 class="titulo">Login do tributo</h2>
+        <form action="#">
+          <div class="cadastrado">
+              <h3 class="subtitulo">Ja sou um tributo</h3>
+              <p class="escrita">Entre com seus dados login e senha.</p>
+            <div class="email">
+              <label for="campoEmail">Seu e-mail:</label>
+              <input class="inputEmail" type="email" placeholder="peeta_mellark@gmail.com">
+            </div>
+            <div class="senha">
+              <label for="campoSenha">Sua senha:</label>
+              <input class="inputSenha" type="password">
+            </div>
+            <a id="esqueceu" href="https://media4.giphy.com/media/CWN0uW6ELn3pK/giphy.gif" target="_blank">Esqueceu sua senha?</a>
+            <div class="botao">
+              <button class="botao-entrar" type="submit">Entrar</button>
+            </div>
+          </div>
+        </form>
+        <form action="#">
+          <div class="nao_cadastrado">
+            <h3 class="subtitulo" >Ainda não se tornou um tributo?</h3>
+            <p class="escrita">Faça agora mesmo o seu cadastro, é simples e rápido!</p>
+              <div class="email">
+                <label for="campoEmail-nao-cadastrado">Seu e-mail:</label>
+                <input class="inputEmail-nao-cadastrado" type="email" placeholder="katniss.ever@gmail.com">
+              </div>
+              <div class="senha">
+                <label for="campoSenha-nao-cadastrado">Sua senha:</label>
+                <input class="inputSenha-nao-cadastrado" type="password">
+              </div>
+              <div class="cpf">
+                <label for="campoCpf">Seu CPF:</label>
+                <input class="inputCpf" type="text" placeholder="Ex.: 000.000.000-00">
+              </div>
+              <div class="nome">
+                <label for="campoNome">Seu nome:</label>
+                <input class="inputNome" type="text" placeholder="katniss Everdeen">
+              </div>
+              <div class="nascimento">
+                <label for="campoData">Data de Nascimento:</label>
+                <input class="inputData" type="date">
+              </div>
+              <div class="cidade">
+                <label for="campoCidade">Seu destrito:</label>
+                <input class="inputCidade" type="text" placeholder="Destrito 12">
+              </div>
+              <div class="sexo">
+                <input id="campoFem" name="test" type="radio">
+                <label for="campoFem">Feminino</label>
+                <input id="campoMas" name="test" type="radio">
+                <label for="campoMas">Masculino</label>
+                <input id="campoNao" name="test" type="radio">
+                <label for="campoNao">Prefiro não dizer</label>
+              </div>
+              <div class="telefone">
+                <label for="campoTelefone">Telefone:</label>
+                <input class="inputTelefone" type="tel" placeholder="(12) 3456-7890">
+              </div>
+              <div class="botao">
+                <button class="botao-cadastrar" type="submit">Cadastrar</button>
+              </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="rodape">
+        <img src="../imagens/logo.png" class="logo"/>
+        <div class="menu">
+          <a href="#" class="menu-link">Sobre nosso destrito</a>
+          <a href="../cadastros/venda.html" class="menu-link">Venda conosco</a>
+          <a href="https://media4.giphy.com/media/Db7KR3SLgRUVfqKp0V/giphy.gif" class="menu-link">Ajuda</a>
+          <a href="https://media4.giphy.com/media/AGp68I6eKt6pREoZYq/giphy.gif" class="menu-link">Pagamento</a>
+        </div>
+      </div>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+</html>

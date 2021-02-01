@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/cabecalho.css"/>
+    <link rel="stylesheet" href="../css/finalizar-pedido.css"/>
+    <link rel="stylesheet" href="../css/rodape.css"/>
+</head>
+<body>
+    <div class="cabecalho"> 
+      <a href="../index.html">
+        <img src="../imagens/logo.png" class="logo"/>
+      </a>
+      <form class="busca">
+        <div class="busca-caixa">
+          <input  class="busca-campo" placeholder="O que deseja?"/>
+          <button class="busca-botao">
+            <ion-icon class="busca-botao-icone" name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </form>
+      <div class="direita">
+        <div class="usuario">
+          <a class="link" href="../cadastros/login.html">
+            <ion-icon class="usuario-icone" name="person-circle-outline"></ion-icon>
+            <p class="usuario-texto">Seja um tributo <br/> <span>ou faça o login</span></p>
+          </a>
+        </div>
+        <div class="carrinho">
+          <a class="link" href="../sacola/minha-sacola.html">
+            <ion-icon class="carrinho-icone" name="bag-handle-outline"></ion-icon>
+            <p class="carrinho-texto">Minha<br/><span>sacola</span></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="finalizar">
+      <h1 class="titulo">Meu pedido</h1>
+      <div class="menu">
+        <div class="descricao">
+          <div class="resumo">
+            <h3 class="sub-titulo">Resumo do pedido</h3>
+            <div class="titulos-descricao">
+              <p class="conta">Descrição do produto </p>
+              <p class="numero">Preço</p>
+            </div>
+            <div class="subtotal">
+              <div>
+                <div class="descricao-produto">
+                  <p class="produtos">Jogos Vorazes - Suzanne Collins</p>
+                  <p class="produtos">Capa normal - Novo</p>
+                  <p class="quantidade">Quantidade: #</p>
+                </div>
+                <div class="descricao-produto">
+                  <p class="produtos">O Guia do Mochileiro das Galáxias - Douglas Adams</p>
+                  <p class="produtos">Capa normal - Novo</p>
+                  <p class="quantidade">Quantidade: #</p>
+                </div>
+                <div class="descricao-produto">
+                  <p class="produtos">Um de nós está mentindo - Karen M. McManus</p>
+                  <p class="produtos">Capa normal - Novo</p>
+                  <p class="quantidade">Quantidade: #</p>
+                </div>
+              </div>
+              <div class="preco">
+                <p class="descricao-preco">R$ 34,90</p>
+                <p class="descricao-preco">R$ 19,90</p>
+                <p class="descricao-preco">R$ 31,30</p>
+              </div>
+            </div>
+            <div class="cep">
+              <p class="endereco">Enviando para: Rua: ###, 000 Vila ###, ### SP, ######-### </p>
+              <p class="destinatario">Slartibartfast</p>
+            </div>
+            <div class="total">
+                <div class="barra"></div>
+                <div class="dentro-total">
+                  <div class="total-da-compra">
+                    <h5 class="subtotal-compra">subtotal dos produtos</h5>
+                    <h5 class="subtotal-compra">cupom</h5>
+                    <h5 class="subtotal-compra">frete</h5>
+                    <h5 class="resultado">Total</h5>
+                  </div>
+                  <div class="total-preco">
+                    <h5 class="subtotal-numero"> R$ 86,10</h5>
+                    <h5 class="subtotal-numero"> R$ ##,##</h5>
+                    <h5 class="subtotal-numero"> R$ ##,##</h5>
+                    <h5 class="total-numero"> R$ ##,##</h5>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="pagamento">
+        <div class="resumo">
+          <h3 class="sub-titulo">Forma de Pagamento</h3>
+          <div class="finalizar-compra">
+            <div class="formas-pagamento">
+              <!-- <input id="campoFem" name="test" type="radio">
+                <label for="campoFem">Feminino</label> -->
+              <input id="campBoleto" name="sla" type="radio">
+              <label for="campBoleto">Boleto</label>
+              <ion-icon name="barcode-outline"></ion-icon>
+            </div>
+            <div class="formas-pagamento">
+              <input id="campDebito" name="sla" type="radio">
+              <label for="campDebito">Cartão de Débito</label>
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+            <div class="formas-pagamento">
+              <input id="campCredito" name="sla" type="radio">
+              <label for="campCredito">Cartão de Crédito</label>
+              <ion-icon name="card-outline"></ion-icon>
+            </div>
+              <a href="https://media.giphy.com/media/CQwNV6b8ScIFvTSO6u/giphy.gif">
+                  <button class="botao-comprar" type="submit">FINALIZAR COMPRA</button>
+              </a>
+          </div>
+          <div class="brasao">
+              <img class="img-brasao" src="../imagens/turdus-azul.png" alt="">
+          </div>
+      </div>
+      </div> 
+    </div>
+
+    <div class="rodape">
+      <img src="../imagens/logo.png" class="logo"/>
+      <div class="menu">
+        <a href="../sobre/sobre.html" class="menu-link">Sobre nosso destrito</a>
+        <a href="../cadastros/venda.html" class="menu-link">Venda conosco</a>
+        <a href="https://media4.giphy.com/media/Db7KR3SLgRUVfqKp0V/giphy.gif" class="menu-link">Ajuda</a>
+        <a href="https://media4.giphy.com/media/AGp68I6eKt6pREoZYq/giphy.gif" class="menu-link">Pagamento</a>
+      </div>
+    </div>  
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+</html>

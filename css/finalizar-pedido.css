@@ -1,0 +1,177 @@
+.finalizar {
+  display: flex;
+}
+
+.finalizar .titulo {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.finalizar .menu {
+  display: flex;
+}
+
+.finalizar .descricao .subtotal {
+  display: flex;
+}
+
+.finalizar .resumo {
+  height: 600px;
+  width: 450px;
+  padding: 20px;
+  margin-top: 45px;
+  margin-left: 30px;
+  margin-bottom: 45px;
+  background-color: #f0f1f1;
+}
+
+.finalizar .resumo .sub-titulo {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  margin-left: 60px;
+}
+
+.finalizar .resumo .titulos-descricao {
+  display: flex;
+  margin-top: 20px;
+}
+
+.finalizar .resumo .titulos-descricao .conta {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.finalizar .resumo .titulos-descricao .numero {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-left: 180px;
+}
+
+.finalizar .resumo .subtotal {
+  display: flex;
+}
+
+.finalizar .resumo .descricao-produto {
+  margin-top: 13px;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.finalizar .resumo .descricao-produto .quantidade {
+  color: #82a2d3;
+}
+
+.finalizar .resumo .subtotal .preco {
+  margin-top: 8px;
+  margin-left: 12px;
+  width: 70px;
+}
+
+.finalizar .resumo .subtotal .preco .descricao-preco {
+  margin-top: 13px;
+  margin-bottom: 45px;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.finalizar .resumo .cep {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.finalizar .resumo .cep .endereco {
+  font-family: "Open Sans";
+  font-size: 13px;
+}
+
+.finalizar .resumo .cep .destinatario {
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #82a2d3;
+}
+
+.finalizar .resumo .total .barra {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* .finalizar .resumo .total .total-da-compra {
+  display: flex;
+} */
+
+.finalizar .resumo .total .dentro-total {
+  display: flex;
+}
+
+.finalizar .resumo .total .total-da-compra .subtotal-compra {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.finalizar .resumo .total .dentro-total .total-preco .subtotal-numero {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.finalizar .resumo .total .resultado {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.finalizar .resumo .total .dentro-total .total-preco .total-numero {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.finalizar .pagamento .resumo .finalizar-compra .formas-pagamento {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.finalizar .resumo .finalizar-compra a {
+  text-decoration: none;
+}
+
+.finalizar .resumo .finalizar-compra .botao-comprar {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
+  margin-top: 20px;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82a2d3;
+
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.finalizar .resumo .img-brasao {
+  margin-top: 10px;
+  margin-left: 100px;
+  /* height: 150px;
+  width: 130px; */
+  height: 50%;
+  width: 50%;
+}

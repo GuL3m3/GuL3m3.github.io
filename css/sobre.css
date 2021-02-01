@@ -82,3 +82,51 @@
   text-align: center;
   margin-bottom: 17px;
 }
+}
+}
+
+.sobre .desenvolvedores .leme {
+  display: flex;
+  height: 220px;
+  width: 450px;
+  background-color: rgb(235, 235, 235);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sobre .desenvolvedores .tainah {
+  display: flex;
+  height: 200px;
+  width: 450px;
+  background-color: rgb(235, 235, 235);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sobre .desenvolvedores .perfil img {
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.sobre .desenvolvedores .bio .nome {
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+.sobre .desenvolvedores .bio .escrita {
+  margin-left: 35px;
+  margin-bottom: 10px;
+  /* margin: 10px; */
+  font-family: "Lato";
+  font-weight: 500;
+  text-align: none;
+}

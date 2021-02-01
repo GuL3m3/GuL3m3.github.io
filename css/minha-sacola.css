@@ -130,6 +130,111 @@
   letter-spacing: -1.5px;
   margin-top: 25px;
   margin-left: 15px;
+  display: flex;
+  align-items: center;
+  border: solid 2px #000;
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo {
+  flex: 1;
+
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-campo:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #000;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao {
+  all: unset;
+
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carrinho .resumo .cep .cep-caixa .cep-botao .cep-botao-icone {
+  font-size: 21px;
+}
+
+.carrinho .resumo .total .barra {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carrinho .resumo .total .dentro-total {
+  display: flex;
+}
+
+.carrinho .resumo .total .resultado {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.carrinho .resumo .total .total-numero {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.carrinho .resumo .finalizar-compra a {
+  text-decoration: none;
+}
+
+.carrinho .resumo .finalizar-compra .botao-comprar {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
+  margin-top: 20px;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #a62520;
+
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.carrinho .resumo .img-brasao {
+  margin-top: 10px;
+  margin-left: 90px;
+  height: 150px;
+  width: 130px;
 }
 
 .carrinho .resumo {
@@ -279,10 +384,217 @@
   cursor: pointer;
   color: #fff;
 }
+.carrinho .resumo .finalizar-compra .botao-comprar:hover {
+  background-color: #a62520bd;
+}
 
 .carrinho .resumo .img-brasao {
   margin-top: 10px;
   margin-left: 90px;
   height: 150px;
   width: 130px;
+}
+
+.carrinho .produto .livro .preco {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 17px;
+  letter-spacing: -1.5px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+/* Dashboard */
+
+.main {
+  display: flex;
+}
+
+.main .tabela {
+  background-color: #faf5a0;
+  height: 300px;
+  width: 220px;
+  margin-top: 65px;
+  margin-left: 35px;
+  margin-right: 50px;
+}
+
+.main .tabela .subtitulo {
+  font-family: "Open Sans";
+  /* font-weight: 300; */
+  font-size: 20px;
+  letter-spacing: -1.5px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.main .tabela .link {
+  color: rgb(20, 20, 20);
+  font-family: "Lato";
+  text-align: justify;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.main .titulo {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.main .cima {
+  display: flex;
+}
+
+.main .produto {
+  margin-left: 50px;
+  background-color: rgba(238, 229, 229, 0.226);
+}
+
+.main .produto .cima .sub-titulo-livro {
+  font-family: "Lato";
+  font-weight: 510;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 230px;
+}
+
+.main .produto .cima .sub-titulo {
+  font-family: "Lato";
+  font-weight: 510;
+  font-size: 25px;
+  letter-spacing: -1.5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.main .produto .livro {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+.main .produto .livro .imgBox {
+  height: 100px;
+  width: 65px;
+  margin-left: 55px;
+  margin-right: 20px;
+}
+
+.main .produto .livro .descricao {
+  margin-right: 10px;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.main .produto .livro .descricao .nome {
+  font-family: "Lato";
+  font-size: 120%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.main .produto .livro .descricao .estoque {
+  font-family: "Lato";
+  font-weight: 700;
+  color: rgb(163 35 26 / 1);
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #eca527;
+}
+
+.main .produto .livro .descricao .capa {
+  font-family: "Lato";
+  font-weight: 500;
+  color: rgb(163 35 26 / 1);
+  margin-left: 10px;
+  color: #eca527;
+}
+
+.main .produto .livro .quantidade {
+  margin-right: 10px;
+  width: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.main .produto .livro .quantidade .estoque {
+  height: 30px;
+  width: 50px;
+  margin-top: 25px;
+  margin-left: 15px;
+  display: block;
+  font-family: "Lato";
+  text-align: justify;
+  color: #eca527;
+  font-size: 30px;
+}
+
+.main .produto .livro .lixeira {
+  font-size: 28px;
+  /* margin-top: 25px; */
+
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.main .produto .livro .lixeira a {
+  color: #eca527;
+}
+
+.main .produto .livro .lixeira a .icone-lixo {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.main .produto .livro .preco {
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 17px;
+  letter-spacing: -1.5px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.main .produto .livro .editar {
+  font-size: 28px;
+  /* margin-top: 25px; */
+
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 70px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  border-left: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+.main .produto .livro .editar a {
+  color: #eca527;
+}
+
+.main .produto .livro .editar a .icone-editar {
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
 }

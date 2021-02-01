@@ -82,7 +82,14 @@
   text-align: center;
   margin-bottom: 17px;
 }
+
+.sobre .desenvolvedores {
+  display: flex;
 }
+
+.sobre .desenvolvedores a {
+  all: unset;
+  color: black;
 }
 
 .sobre .desenvolvedores .leme {

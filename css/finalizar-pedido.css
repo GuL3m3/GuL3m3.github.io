@@ -167,6 +167,9 @@
   color: #fff;
 }
 
+.finalizar .resumo .finalizar-compra .botao-comprar:hover {
+  background-color: #82a2d3a2;
+}
 
 .finalizar .resumo .img-brasao {
   margin-top: 10px;

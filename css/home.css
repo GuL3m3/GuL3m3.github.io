@@ -6,6 +6,12 @@
   margin-right: auto;
   margin-bottom: 50px;
 
+  /* border: 1px solid rgb(229, 229, 229); */
+  border-top: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  border-left: 1px solid rgb(229, 229, 229);
+
   background-color: #cccccc;
 }
 

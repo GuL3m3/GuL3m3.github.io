@@ -123,13 +123,35 @@
   margin-top: 25px;
 }
 
-.carrinho .produto .livro .preco {
-  font-family: "Lato";
-  font-weight: 100;
-  font-size: 17px;
-  letter-spacing: -1.5px;
+.carrinho .resumo .subtotal {
+  display: flex;
+  margin-top: 20px;
+}
+
+.carrinho .resumo .subtotal .conta {
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.carrinho .resumo .subtotal .numero {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-left: 75px;
+}
+
+.carrinho .resumo .cep {
+  width: 100%;
   margin-top: 25px;
-  margin-left: 15px;
+}
+
+.carrinho .resumo .cep .label {
+  margin-bottom: 5px;
+  display: block;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.carrinho .resumo .cep .cep-caixa {
   display: flex;
   align-items: center;
   border: solid 2px #000;

@@ -218,6 +218,10 @@
   color: #fff;
 }
 
+.formularios .nao_cadastrado .botao-cadastrar:hover {
+  background-color: #eca427bd;
+}
+
 .formularios .cadastrado .botao-entrar {
   all: unset;
 
@@ -236,6 +240,10 @@
   font-size: 10px;
   cursor: pointer;
   color: #fff;
+}
+
+.formularios .cadastrado .botao-entrar:hover {
+  background-color: #eca427bd;
 }
 
 .formProdutos {
@@ -428,4 +436,8 @@
   font-size: 10px;
   cursor: pointer;
   color: #fff;
+}
+
+.formProdutos .formulario-venda .botao .cadastrar-venda:hover {
+  background-color: #eca427bd;
 }

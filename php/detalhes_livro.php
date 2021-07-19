@@ -52,7 +52,7 @@
 
     <div class="detalhes-do-produto">
         <div class="esquerda">
-            <img class="capa" src="<?=$linha['nomeImagem']?>" alt="capa livro escolhido">
+            <img class="capa" src="../<?=$linha['nomeImagem']?>" alt="capa livro escolhido">
         </div>
         <div class="centro">
             <h1 class="titulo"><?=$linha['nomeLivro']?></h1>

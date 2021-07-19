@@ -12,4 +12,8 @@ if ($resultado) {
     echo "Deu ruim" . mysqli_error($conexao);
 }
 
+
+
 ?>
+
+<a href="listar.php">Clique para ver todos os produtos cadastrados :)</a>

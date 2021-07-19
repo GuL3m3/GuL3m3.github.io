@@ -49,7 +49,9 @@
     </div>
     <div class="produtos">
       <?php
-        $conexao = mysqli_connect("localhost", "root", "", "dbturdus");
+      require "php/conexao.php";
+
+        // $conexao = mysqli_connect("localhost", "root", "", "dbturdus");
         $comando = "SELECT * FROM Livro";
         $resultado = mysqli_query($conexao, $comando);
       ?>
@@ -75,7 +77,7 @@
       <img src="imagens/logo.png" class="logo"/>
       <div class="menu">
         <a href="sobre/sobre.html" class="menu-link">Sobre nosso destrito</a>
-        <a href="cadastros/venda.html" class="menu-link">Venda conosco</a>
+        <a href="php/venda.php" class="menu-link">Venda conosco</a>
         <a href="https://media4.giphy.com/media/Db7KR3SLgRUVfqKp0V/giphy.gif" class="menu-link">Ajuda</a>
         <a href="https://media4.giphy.com/media/AGp68I6eKt6pREoZYq/giphy.gif" class="menu-link">Pagamento</a>
       </div>

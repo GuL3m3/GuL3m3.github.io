@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaaaaaaaaaa</title>
+    <title>turdus</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css"/>
@@ -16,16 +16,7 @@
 <?php
 require_once 'conexao.php';
 
-function uploadImagem($imagem_temp_name, $name_imagem)
-{
-    $extensao = 	strtolower(substr($name_imagem,-4));
-	$novo_nome = 	md5(time()).$extensao;
-	$diretorio = 	"../imagens/capasUpload/";
-
-	move_uploaded_file($imagem_temp_name ,$diretorio.$novo_nome);
-
-	return $diretorio.$novo_nome;
-}
+require_once '../upload.php';
 
 $tituloLivro = $_POST['livro-txt'];
 $autorLivro = $_POST['autor-txt'];
@@ -34,7 +25,7 @@ $precoLivro = $_POST['preco-livro'];
 $ficha_tecLivro = $_POST['fichaTec'];
 $generoLivro = $_POST['genero'];
 
-$img = uploadImagem($_FILES["nomeImagem"]["tmp_name"], $_FILES["nomeImagem"]["name"]);
+$img = uploadImagem($_FILES["nomeImagem"]["tmp_name"], $_FILES["nomeImagem"]["name"], "../");
 
 $precoLivro = str_replace(",", ".", $_POST['preco-livro']);
 

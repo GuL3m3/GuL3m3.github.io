@@ -91,7 +91,7 @@
                         ?>
                     <div class="livro">
                         <a href="detalhes_livro.php?idLivro=<?=$linha['idLivro']?>">
-                          <img class="imgBox" alt="Imagem" src="<?=$linha['nomeImagem']?>">
+                          <img class="imgBox" alt="Imagem" src="../<?=$linha['nomeImagem']?>">
                         </a>
 
                         <div class="descricao">

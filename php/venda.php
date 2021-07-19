@@ -17,14 +17,14 @@
         <a href="../index.html">
           <img src="../imagens/logo.png" class="logo"/>
         </a>
-          <form class="busca">
+        <!-- <form class="busca" action="#">
             <div class="busca-caixa">
               <input  class="busca-campo" placeholder="O que deseja?"/>
               <button class="busca-botao">
                 <ion-icon class="busca-botao-icone" name="search-outline"></ion-icon>
               </button>
             </div>
-          </form>
+          </form> -->
           <div class="direita">
             <div class="usuario">
               <a class="link" href="../cadastros/login.html">
@@ -47,10 +47,10 @@
           <h3 class="subtitulo">Alteração</h3>
             <ul>
               <li>
-                <a class="link" href="venda.html">Novo produto</a> 
+                <a class="link" href="venda.php">Novo produto</a> 
               </li>
               <li>
-                <a class="link" href="dashboard.html">Todos os produtos</a> 
+                <a class="link" href="../cadastros/dashboard.html">Todos os produtos</a> 
               </li>
             </ul>
         </div>
@@ -72,55 +72,72 @@
       </div>
       <div class="formulario-venda">
         <h3 class="titulo">Venda seu livro conosco</h3>
-        <form method="POST" action="../php/cadastro-produtos.php">
+         <form action="cadastro-produtos.php" method="POST"  enctype="multipart/form-data">
           <div class="nomeLivro">
             <label for="nomeLivro">Nome do Livro</label>
-            <input class="inputLivro" type="text" placeholder="Jogos Vorazes" name="livro-txt">
-        </div>
+            <input class="inputLivro" type="text" name="livro-txt">
+          </div>
 
-        <div class="nomeAutor">
+          <div class="nomeAutor">
             <label for="nomeAutor">Nome do Autor(a)</label>
-            <input class ="inputAutor" type="text" placeholder="Suzanne Collins">
-        </div>
+            <input class ="inputAutor" type="text" name="autor-txt">
+          </div>
 
-        <div class="sinopse">
+          <div class="sinopse">
             <label for="sinopse">Sinopse</label>
-            <textarea class ="inputSinopse" cols="70" rows="10" placeholder="Comandados a mãos de ferro pelo presidente Coriolanus Snow, os cidadãos, com exceção dos da Capital, sofrem há 74 anos com a permanência dos chamados “Jogos Vorazes”, uma batalha televisionada na qual todos os participantes devem lutar até a morte."></textarea>
-        </div>
+            <input class = "inputSinopse" type="text" name="sinopse-livro" >
+          </div>
 
-        <div class="preco">
+          <div class="preco">
             <label for="preco">Preço</label>
-            <input class ="inputPreco" type="text" placeholder="R$ 39,50">
-        </div>
+            <input class ="inputPreco" type="text" name="preco-livro">
+          </div>
 
-        <div class="fichaTec">
+          <div class="fichaTec">
             <label for="fichaTec">FichaTécnica</label>
-            <textarea class ="inputFichaTec" cols="70" rows="10" placeholder="edtoria, dimensão, páginas, etc"></textarea>
-        </div>
+            <input class ="inputFichaTec" type="text" name="fichaTec">
+          </div>
 
-        <div class="genero">
+          <div class="genero">
             <label for="genero">Gênero</label>
-            <select class ="inputGenero">
+            <select class ="inputGenero" name="genero"> 
 
-              <option class="genero"> Biografia</option>
-              <option class="genero"> Fantasia e Fantasia Científica</option>
-              <option class="genero"> Ficção Científica</option>
-              <option class="genero"> Horror</option>
-              <option class="genero"> Mistério/Suspense</option>
-              <option class="genero"> Chick lit</option>
-              <option class="genero"> Épico/Aventura</option>
+              <?php
+              require_once 'conexao.php';
+
+              $comando = "SELECT * FROM tblgeneros";
+              $resultado = mysqli_query($conexao, $comando);
+
+              ?>
+              <?php
+              while ($linha = mysqli_fetch_assoc($resultado)) {
+              ?>
+                <option value="<?=$linha['idGenero']?>">
+                  <?=$linha['genero']?>
+                </option>
+              <?php
+              }
+              ?>
+              <!-- // <option class="genero"> Biografia</option>
+              // <option class="genero"> Fantasia e Fantasia Científica</option>
+              // <option class="genero"> Ficção Científica</option>
+              // <option class="genero"> Horror</option>
+              // <option class="genero"> Mistério/Suspense</option>
+              // <option class="genero"> Chick lit</option>
+              // <option class="genero"> Épico/Aventura</option> -->
+              ?>
 
             </select>
-        </div>
+          </div>
 
-        <div class="uplImg">
+          <div class="uplImg">
             <label for="uplImg">Upload de Imagem</label>
-            <input class ="input-uplImg" type="image">
-        </div>
+            <input class ="input-uplImg" type="file" name="nomeImagem">
+          </div>
         
-        <div class="botao">
+          <div class="botao">
             <button class="cadastrar-venda" type="submit">Cadastrar produto</button>
-        </div>
+          </div>
         </form>
       </div>
     </div>
